@@ -1,41 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - a simple program that outputs 0-9 separated by commas
  *
- * Return: always 0
+ * Return: 0 on success
  */
-
 int main(void)
 {
-	int num1;
-	int num2;
+	int i;
+	int j;
+	int k;
 
-	/* Print 2-digit numbers less than 90 and separated by a comma */
-
-	/* Print the first digit */
-	for (num1 = '0'; num1 < '9'; num1++)
+	for (i = 48; i < 56; i++)
 	{
-		/* Print the second digit */
-		for (num2 = num1 + 1; num2 <= '9'; num2++)
+		for (j = i + 1; j < 57; j++)
 		{
-			/* Prints the double digit number */
-			if (num2 != num1)
+			for (k = j + 1; k < 58; k++)
 			{
-				putchar(num1);
-				putchar(num2);
-
-				if (num1 == '8' && num2 == '9')
+				putchar(i);
+				putchar(j);
+				putchar(k);
+				if (i != 55 || j != 56 || k != 57)
 				{
-					continue;
+					putchar(',');
+					putchar(' ');
 				}
-				/* Print the separator */
-				putchar(',');
-				putchar(' ');
 			}
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
