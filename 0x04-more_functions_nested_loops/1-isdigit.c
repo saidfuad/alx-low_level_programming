@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * _isdigit - check the code for Holberton School students.
+ * _isdigit 
  * @c: Integer input
  * Return: Always 0.
  */
