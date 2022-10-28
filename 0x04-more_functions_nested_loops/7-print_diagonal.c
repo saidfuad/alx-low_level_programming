@@ -1,26 +1,28 @@
 #include "main.h"
-
 /**
- * print_diagonal 
- * @n: Number of spaces wanted
- * Return: Always 0.
+ * print_diagonal -draws a diagonal line on the terminal
+ * @n: the number of times that the special character must be print
+ *
+ * Return: a diagonal
  */
 void print_diagonal(int n)
 {
-  int i, j;
+	int a, b;
 
-	if (n <= 0)
-		_putchar('\n');
-	else
+	if (n > 0)
 	{
-		for (i = 0; i < n; i++)
+		for (a = 0 ; a < n ; a++)
 		{
-			for (j = 0; j < i; j++)
+			for (b = 0 ; b < a ; b++)
+			{
 				_putchar(' ');
-
-			_putchar('\\');
+			}
+			_putchar(92);
 			_putchar('\n');
 		}
-
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
