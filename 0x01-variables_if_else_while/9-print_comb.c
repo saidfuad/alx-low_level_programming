@@ -1,18 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - a simple program that outputs 0-9 separated by commas
  *
- * Return: Always 0 (Success)
+ * Return: 0 on success
  */
 int main(void)
 {
-	int numb;
+	int i;
 
-	for (numb = '0' ; numb <= '9' ; numb++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar(numb);
-
-		if (numb != '9')
+		putchar(i);
+		if (i != 57)
 		{
 			putchar(',');
 			putchar(' ');
