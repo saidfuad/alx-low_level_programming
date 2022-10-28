@@ -1,21 +1,18 @@
 #include "main.h"
-
 /**
- * print_line 
- * @n: Number of lines wanted
- * Return: Always 0.
+ * print_line -draws a straight line in the terminal
+ * @n: the number of times that the special character must be printed
+ *
+ * Return: a straight line
  */
 void print_line(int n)
 {
-	int i;
+	int a = 1;
 
-	if (n <= 0)
-		_putchar('\n');
-	else
+	while (a <= n)
 	{
-		for (i = 0; i < n; i++)
-			_putchar('_');
-
-		_putchar('\n');
+		_putchar(95);
+		a++;
 	}
+	_putchar('\n');
 }
